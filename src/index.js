@@ -3,11 +3,22 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { ConfigProvider } from 'antd';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <ConfigProvider 
+      theme={{ 
+        token: { 
+          colorTextBase: '#041D32',
+          fontFamily: 'Montserrat',
+          colorPrimary: '#F2CC58' 
+        } 
+      }}
+    >
+      <App />
+    </ConfigProvider>
   </React.StrictMode>
 );
 

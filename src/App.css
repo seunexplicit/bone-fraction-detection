@@ -1,38 +1,98 @@
-.App {
+.ant-layout {
+  height: 100vh;
+  font-family: 'Roboto', sans-serif; /* Ensure fonts match Figma */
+  background-color: transparent;
+}
+
+.semi-bold {
+  font-weight: 600;
+}
+
+.sider {
+  padding: 20px;
+  border: 1px solid #D1D1D6;
+  border-radius: 10px;
+  background-color: transparent;
+}
+
+.inline-title {
+  display: inline;
+  font-size: inherit;
+}
+
+.content {
+  padding: 20px;
+  background-color: #ffffff;
+}
+
+h2 {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+/* Tabs */
+.ant-tabs-tab {
+  font-size: 14px;
+  padding: 8px 16px;
+  font-weight: 500;
+}
+
+.ant-tabs-content {
+  max-height: calc(100dvh - 230px);
+  overflow-y: auto;
+}
+
+.ant-tabs-tab-active .ant-tabs-tab-btn {
+  color: #1890ff;
+}
+
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+  gap: 12px;
+}
+
+/* Card */
+.ant-card {
+  border: none;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.ant-card-body {
+  padding: 0;
+}
+
+.image-modal {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.image-modal .ant-image {
+  max-width: 80%;
+  border-radius: 8px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.ant-image img.ant-image-img {
+  vertical-align: middle;
+  object-fit: cover;
+  height: 125px;
+  object-position: center;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.checkbox-group {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  gap: 8px;
+  margin-top: 10px;
 }
 
-.App-link {
-  color: #61dafb;
+.select-label {
+  margin-top: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.dot-indicator {
+  height: 5px;
+  width: 5px;
+  border-radius: 50%;
+  display: flex;
 }
