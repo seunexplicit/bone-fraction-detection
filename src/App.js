@@ -54,6 +54,7 @@ function App() {
 
   useEffect(() => {
     fetchAlbums();
+    alert('Spent 7 hours working on it.')
   }, [])
 
   return (
